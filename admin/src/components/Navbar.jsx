@@ -1,0 +1,24 @@
+import React from "react";
+import { assets } from "../assets/assets";
+
+const Navbar = ({ setToken }) => {
+  return (
+    <div className="flex items-center py-2 px-[4%] justify-between">
+      <img className="w-[max(10%,80px)]" src={assets.logo} alt="" />
+      <button
+        onClick={() => setToken("")}
+        className="bg-gray-600 text-white 
+    px-4 py-3 
+    sm:px-5 sm:py-4 
+    md:px-6 md:py-3 
+    lg:px-7 lg:py-2 
+    rounded-full 
+    text-xs sm:text-sm md:text-base "
+      >
+        Logout
+      </button>
+    </div>
+  );
+};
+
+export default Navbar;
